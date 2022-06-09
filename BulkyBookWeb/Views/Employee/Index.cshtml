@@ -23,22 +23,36 @@
 
             <div class="form-group">
                 <label for="Birth">Birthdate</label>
-                <input type="text" class="form-control" id="Birth" name="Birth" value="@Model.Birth" />
+                <input type="date" class="form-control" id="Birth" name="Birth" value="@Model.Birth" />
+                
             </div>
 
-            <div class="dropdown">
+            <div class="form-group">
                 <label for="Children">Number of Children</label>
-                <input type="text" class="form-control" id="Children" name="Children" value="@Model.Children" />
+                <select asp-for="Children" class="form-control">
+                    <option value = "">Please enter number of children</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                </select>
             </div>
 
             <div class="form-group">
                 <label for="Educationlvl">Educational Level</label>
-                <input type="text" class="form-control" id="Educationlvl" name="Educationlvl" value="@Model.EducationLvl" />
+                <select asp-for="Children" class="form-control">
+                    <option value = "">Please enter education level</option>
+                    <option value = "TEI">TEI</option>
+                    <option value = "AEI">AEI</option>
+                    <option value = "MA">MA</option>
+                    <option value = "PhD">PhD</option>
+                </select>
             </div>
 
             <div class="form-group">
                 <label for="Hire">Hire Date</label>
-                <input type="text" class="form-control" id="Hire" name="Hire" value="@Model.Hire" />
+                <input type="date" class="form-control" id="Hire" name="Hire" value="@Model.Hire" />
             </div>
 
              <div class="form-group">
@@ -48,8 +62,6 @@
 
             <button type="submit" class="btn btn-info" id="add">Ok</button>
         }
-
-
 
 
 
